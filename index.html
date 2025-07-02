@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeTube</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .user-icons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .user-icons img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .logo img {
+      height: 32px;
+    }
+
+    .video-player, .sidebar-video {
+      position: relative;
+    }
+
+    .video-player img.play-icon,
+    .sidebar-video img.play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      transform: translate(-50%, -50%);
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    .sidebar-video img.play-icon {
+      width: 24px;
+    }
+
+    .sidebar-video img.thumbnail {
+      width: 120px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .video-player img.thumbnail {
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="metube-logo.png" alt="MeTube Logo">
+    </div>
+    <input type="text" class="search" placeholder="Search">
+    <div class="user-icons">
+      <img src="icon-search.png" alt="Search Icon">
+      <img src="icon-mic.jpg" alt="Mic Icon">
+      <img src="icon-bell.jpg" alt="Bell Icon">
+      <img src="metube-logo.png" alt="User Icon">
+    </div>
+  </header>
+
+  <!-- Page Layout -->
+  <main class="layout">
+    <!-- Main Video Area -->
+    <section class="main-video">
+      <div class="video-player">
+        <img class="thumbnail" src="https://i.imgur.com/JqBHQgf.png" alt="J Hus Video" />
+        <img class="play-icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Play_Icon.png" alt="Play Icon">
+      </div>
+      <h1>J Hus - Gold (Official Video) ft. Asake</h1>
+      <div class="video-actions">
+        <button>👍 14K</button>
+        <button>Share</button>
+        <button>Save</button>
+        <button>Clip</button>
+        <button>⋯</button>
+      </div>
+
+      <!-- Comments -->
+      <div class="comments">
+        <h3>Comments</h3>
+        <div class="comment"><strong>@timbrownian</strong> — Nigerians in the house 🇳🇬</div>
+        <div class="comment"><strong>@AmazingWkrl</strong> — The Gambian President is BACK 🇬🇲</div>
+        <div class="comment"><strong>@DoktaBrainDoorkey</strong> — J Hus don’t need cows to go herd ❤️</div>
+        <div class="comment"><strong>@cyberalbert</strong> — I started listening to Hus recently. I'm already a big fan.</div>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-video">
+        <img class="thumbnail" src="https://i.imgur.com/bnLlHkG.png" alt="Video 1">
+        <img class="play-icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Play_Icon.png" alt="Play Icon">
+        <div class="info">
+          <p><strong>ODUMODUBLVCK, Victony - PITY THIS BOY</strong></p>
+          <p>237K views • 4 days ago</p>
+        </div>
+      </div>
+      <div class="sidebar-video">
+        <img class="thumbnail" src="https://i.imgur.com/bnLlHkG.png" alt="Video 2">
+        <img class="play-icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Play_Icon.png" alt="Play Icon">
+        <div class="info">
+          <p><strong>Olamide - Billionaires Club</strong></p>
+          <p>1.8M views • 10 days ago</p>
+        </div>
+      </div>
+      <div class="sidebar-video">
+        <img class="thumbnail" src="https://i.imgur.com/bnLlHkG.png" alt="Video 3">
+        <img class="play-icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Play_Icon.png" alt="Play Icon">
+        <div class="info">
+          <p><strong>Young Nudy - Green Bean</strong></p>
+          <p>13M views • 3 years ago</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
